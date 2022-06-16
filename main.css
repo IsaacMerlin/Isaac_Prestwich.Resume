@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 
-nav {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -110,4 +110,34 @@ h1 {
     .menu {
         display: flex;
     }
+}
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: var(--primary);
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    padding: 12px 16px;
+    background-color: var(--dark);
+    color: #FFF;
+    text-decoration: none;
+}
+.mobile-nav a:hover {
+    background-color: var(--primary);
+}
+.mobile-nav.is-active {
+    left: 100%;
 }
